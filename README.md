@@ -3,12 +3,21 @@
 Live at https://joshuacampaign.com (apex and www serve directly).
 
 ## What this is
-The public English website for Joshua Campaign — founded by Karl Hargestam, Per Akvist featured evangelist — aligned with One Chance. Static single-file site.
+The public English website for Joshua Campaign — founded by Karl Hargestam, Per Akvist featured evangelist — aligned with One Chance.
+
+Karl approved the 27 October 2026 SEO structure. The site is static HTML, not one file:
+
+- `/` homepage summary
+- `/mission/`, `/history/`, `/leadership/`, `/give/` crawlable sections
+- `/links/` link tree
+- Photographs in `/assets/` as WebP and AVIF (with width, height, and `loading="lazy"` except the hero). Do not re-embed them as base64.
+
+Passages held for Karl (unapproved figures, prices, and creative-access identifiers) are in `archive/moved-content.md`. They are not linked from the site.
 
 ## How it deploys
-- Source of truth: the "Joshua Campaign Website" web artifact (built and edited with Cass).
-- Publish flow: artifact → static export → `index.html` replaced on `main` → Vercel project `joshuacampaign-info` auto-deploys from main.
-- Do not hand-edit `index.html` for content changes; the next export overwrites it.
+- Source of truth: this repository, after Karl's 27 October 2026 approval of the page split and extracted images. A future artifact export must write the same pages and file images, not a single base64 `index.html`.
+- Publish flow: merge to `main` → Vercel project `joshuacampaign-info` auto-deploys from main.
+- Do not merge or deploy to production without Karl. No DNS changes from a content PR.
 
 ## Domains & DNS
 - `joshuacampaign.com` — DNS at Network Solutions (account "Joshua Campaign"): A `@` → Vercel, CNAME `www` → Vercel. Google Workspace mail records must be preserved.
