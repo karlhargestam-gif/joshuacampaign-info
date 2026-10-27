@@ -23,7 +23,7 @@ Photographs and logos live in `/assets/` as AVIF and WebP, with a JPEG or PNG fa
 
 ## Public wording
 
-Use only these approved public figures: 3.37 billion people still unreached, 4.2 million decisions, and Joshua Campaign founded in 1997. The conviction line is “give every person one chance to hear the Gospel.” Do not write “finish the Great Commission.” Do not add worker names, locations, teams or photos for creative-access fields.
+Published figures include 3.37 billion people still unreached, 4.2 million decisions, and Joshua Campaign founded in 1997, together with the earlier public lines restored on 27 Oct 2026: 5.2 million salvation books given away, an earlier milestone of more than 3.8 million salvation books, 25 years of ministry marked in 2024, tens of thousands responding, Ethiopia’s evangelical share from about 2% around 1992 to about 20%, and campaign meetings reaching hundreds of thousands in a year. The conviction line is “give every person one chance to hear the Gospel.” Do not write “finish the Great Commission.” Do not add worker names, locations, teams or photos for creative-access fields. The Ethiopia planting names already on `/mission/` stay.
 
 ## How it deploys
 
