@@ -239,7 +239,7 @@ def check(root, host, max_page_kb):
                 errors.append(f"{rel}: image {label} must be loading=lazy or data-atf=true, not both and not neither")
 
         if rel == "index.html":
-            for phrase in ("4.2 million", "3.37 billion", "1998", "give every person one chance to hear the Gospel"):
+            for phrase in ("5.2 million", "3.37 billion", "1998", "give every person one chance to hear the Gospel"):
                 if phrase.lower() not in raw.lower():
                     errors.append(f"index.html: missing approved wording {phrase!r}")
 
